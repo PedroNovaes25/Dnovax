@@ -30,7 +30,16 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbl_Gpu = new System.Windows.Forms.Label();
+            this.lbl_Largura_Ram = new System.Windows.Forms.Label();
+            this.lbl_Processador = new System.Windows.Forms.Label();
+            this.lbl_Bios = new System.Windows.Forms.Label();
             this.lbl_SO = new System.Windows.Forms.Label();
+            this.lbl_5 = new System.Windows.Forms.Label();
+            this.lbl_4 = new System.Windows.Forms.Label();
+            this.lbl_3 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl_1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lbl_Placa_Mae = new System.Windows.Forms.Label();
@@ -39,15 +48,6 @@
             this.btn_Info_Hard = new System.Windows.Forms.Button();
             this.btn_Home = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lbl_Bios = new System.Windows.Forms.Label();
-            this.lbl_Processador = new System.Windows.Forms.Label();
-            this.lbl_Largura_Ram = new System.Windows.Forms.Label();
-            this.lbl_Gpu = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,30 +70,114 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightGray;
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.lbl_Gpu);
             this.panel4.Controls.Add(this.lbl_Largura_Ram);
             this.panel4.Controls.Add(this.lbl_Processador);
             this.panel4.Controls.Add(this.lbl_Bios);
             this.panel4.Controls.Add(this.lbl_SO);
+            this.panel4.Controls.Add(this.lbl_5);
+            this.panel4.Controls.Add(this.lbl_4);
+            this.panel4.Controls.Add(this.lbl_3);
+            this.panel4.Controls.Add(this.lbl2);
+            this.panel4.Controls.Add(this.lbl_1);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(32, 160);
+            this.panel4.Location = new System.Drawing.Point(34, 160);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(476, 184);
             this.panel4.TabIndex = 34;
             // 
+            // lbl_Gpu
+            // 
+            this.lbl_Gpu.AutoSize = true;
+            this.lbl_Gpu.Location = new System.Drawing.Point(81, 138);
+            this.lbl_Gpu.Name = "lbl_Gpu";
+            this.lbl_Gpu.Size = new System.Drawing.Size(13, 13);
+            this.lbl_Gpu.TabIndex = 10;
+            this.lbl_Gpu.Text = "--";
+            // 
+            // lbl_Largura_Ram
+            // 
+            this.lbl_Largura_Ram.AutoSize = true;
+            this.lbl_Largura_Ram.Location = new System.Drawing.Point(81, 112);
+            this.lbl_Largura_Ram.Name = "lbl_Largura_Ram";
+            this.lbl_Largura_Ram.Size = new System.Drawing.Size(13, 13);
+            this.lbl_Largura_Ram.TabIndex = 9;
+            this.lbl_Largura_Ram.Text = "--";
+            // 
+            // lbl_Processador
+            // 
+            this.lbl_Processador.AutoSize = true;
+            this.lbl_Processador.Location = new System.Drawing.Point(122, 86);
+            this.lbl_Processador.Name = "lbl_Processador";
+            this.lbl_Processador.Size = new System.Drawing.Size(13, 13);
+            this.lbl_Processador.TabIndex = 8;
+            this.lbl_Processador.Text = "--";
+            // 
+            // lbl_Bios
+            // 
+            this.lbl_Bios.AutoSize = true;
+            this.lbl_Bios.Location = new System.Drawing.Point(82, 59);
+            this.lbl_Bios.Name = "lbl_Bios";
+            this.lbl_Bios.Size = new System.Drawing.Size(13, 13);
+            this.lbl_Bios.TabIndex = 7;
+            this.lbl_Bios.Text = "--";
+            // 
             // lbl_SO
             // 
-            this.lbl_SO.AutoSize = true;
-            this.lbl_SO.Location = new System.Drawing.Point(34, 31);
+            this.lbl_SO.Location = new System.Drawing.Point(65, 31);
             this.lbl_SO.Name = "lbl_SO";
-            this.lbl_SO.Size = new System.Drawing.Size(25, 13);
-            this.lbl_SO.TabIndex = 1;
-            this.lbl_SO.Text = "SO:";
+            this.lbl_SO.Size = new System.Drawing.Size(100, 13);
+            this.lbl_SO.TabIndex = 6;
+            this.lbl_SO.Text = "--";
+            // 
+            // lbl_5
+            // 
+            this.lbl_5.AutoSize = true;
+            this.lbl_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_5.Location = new System.Drawing.Point(34, 136);
+            this.lbl_5.Name = "lbl_5";
+            this.lbl_5.Size = new System.Drawing.Size(40, 16);
+            this.lbl_5.TabIndex = 5;
+            this.lbl_5.Text = "GPU:";
+            // 
+            // lbl_4
+            // 
+            this.lbl_4.AutoSize = true;
+            this.lbl_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_4.Location = new System.Drawing.Point(34, 109);
+            this.lbl_4.Name = "lbl_4";
+            this.lbl_4.Size = new System.Drawing.Size(41, 16);
+            this.lbl_4.TabIndex = 4;
+            this.lbl_4.Text = "RAM:";
+            // 
+            // lbl_3
+            // 
+            this.lbl_3.AutoSize = true;
+            this.lbl_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_3.Location = new System.Drawing.Point(34, 84);
+            this.lbl_3.Name = "lbl_3";
+            this.lbl_3.Size = new System.Drawing.Size(89, 16);
+            this.lbl_3.TabIndex = 3;
+            this.lbl_3.Text = "Processador:";
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.Location = new System.Drawing.Point(34, 57);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(42, 16);
+            this.lbl2.TabIndex = 2;
+            this.lbl2.Text = "BIOS:";
+            // 
+            // lbl_1
+            // 
+            this.lbl_1.AutoSize = true;
+            this.lbl_1.Location = new System.Drawing.Point(34, 31);
+            this.lbl_1.Name = "lbl_1";
+            this.lbl_1.Size = new System.Drawing.Size(25, 13);
+            this.lbl_1.TabIndex = 1;
+            this.lbl_1.Text = "SO:";
             // 
             // label3
             // 
@@ -175,92 +259,6 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // lbl_Bios
-            // 
-            this.lbl_Bios.AutoSize = true;
-            this.lbl_Bios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Bios.Location = new System.Drawing.Point(34, 57);
-            this.lbl_Bios.Name = "lbl_Bios";
-            this.lbl_Bios.Size = new System.Drawing.Size(42, 16);
-            this.lbl_Bios.TabIndex = 2;
-            this.lbl_Bios.Text = "BIOS:";
-            // 
-            // lbl_Processador
-            // 
-            this.lbl_Processador.AutoSize = true;
-            this.lbl_Processador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Processador.Location = new System.Drawing.Point(34, 84);
-            this.lbl_Processador.Name = "lbl_Processador";
-            this.lbl_Processador.Size = new System.Drawing.Size(89, 16);
-            this.lbl_Processador.TabIndex = 3;
-            this.lbl_Processador.Text = "Processador:";
-            // 
-            // lbl_Largura_Ram
-            // 
-            this.lbl_Largura_Ram.AutoSize = true;
-            this.lbl_Largura_Ram.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Largura_Ram.Location = new System.Drawing.Point(34, 109);
-            this.lbl_Largura_Ram.Name = "lbl_Largura_Ram";
-            this.lbl_Largura_Ram.Size = new System.Drawing.Size(41, 16);
-            this.lbl_Largura_Ram.TabIndex = 4;
-            this.lbl_Largura_Ram.Text = "RAM:";
-            // 
-            // lbl_Gpu
-            // 
-            this.lbl_Gpu.AutoSize = true;
-            this.lbl_Gpu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Gpu.Location = new System.Drawing.Point(34, 136);
-            this.lbl_Gpu.Name = "lbl_Gpu";
-            this.lbl_Gpu.Size = new System.Drawing.Size(40, 16);
-            this.lbl_Gpu.TabIndex = 5;
-            this.lbl_Gpu.Text = "GPU:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "--";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(82, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "--";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(122, 86);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "--";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(81, 112);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "--";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(81, 138);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(13, 13);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "--";
-            // 
             // form_infoHard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,15 +292,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbl_Placa_Mae;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_1;
+        private System.Windows.Forms.Label lbl_5;
+        private System.Windows.Forms.Label lbl_4;
+        private System.Windows.Forms.Label lbl_3;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl_Processador;
+        private System.Windows.Forms.Label lbl_Bios;
         private System.Windows.Forms.Label lbl_SO;
         private System.Windows.Forms.Label lbl_Gpu;
         private System.Windows.Forms.Label lbl_Largura_Ram;
-        private System.Windows.Forms.Label lbl_Processador;
-        private System.Windows.Forms.Label lbl_Bios;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
     }
 }
