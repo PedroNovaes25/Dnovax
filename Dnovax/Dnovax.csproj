@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\InformacoesSistema.cs" />
+    <Compile Include="Control\ProcessosDoSistema.cs" />
     <Compile Include="Telas\form_AppHome.cs">
       <SubType>Form</SubType>
     </Compile>

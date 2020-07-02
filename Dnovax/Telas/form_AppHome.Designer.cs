@@ -30,10 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_GPU = new System.Windows.Forms.Label();
+            this.lbl_Disco = new System.Windows.Forms.Label();
+            this.lbl_RAM = new System.Windows.Forms.Label();
+            this.lbl_CPU = new System.Windows.Forms.Label();
             this.CPU = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,10 +65,10 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightGray;
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.lbl_GPU);
+            this.panel3.Controls.Add(this.lbl_Disco);
+            this.panel3.Controls.Add(this.lbl_RAM);
+            this.panel3.Controls.Add(this.lbl_CPU);
             this.panel3.Controls.Add(this.CPU);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
@@ -78,47 +78,46 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(520, 63);
             this.panel3.TabIndex = 31;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // label8
+            // lbl_GPU
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(475, 36);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 20);
-            this.label8.TabIndex = 35;
-            this.label8.Text = "0%";
+            this.lbl_GPU.AutoSize = true;
+            this.lbl_GPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_GPU.Location = new System.Drawing.Point(475, 36);
+            this.lbl_GPU.Name = "lbl_GPU";
+            this.lbl_GPU.Size = new System.Drawing.Size(32, 20);
+            this.lbl_GPU.TabIndex = 35;
+            this.lbl_GPU.Text = "0%";
             // 
-            // label7
+            // lbl_Disco
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(370, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 20);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "0%";
+            this.lbl_Disco.AutoSize = true;
+            this.lbl_Disco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Disco.Location = new System.Drawing.Point(370, 36);
+            this.lbl_Disco.Name = "lbl_Disco";
+            this.lbl_Disco.Size = new System.Drawing.Size(32, 20);
+            this.lbl_Disco.TabIndex = 34;
+            this.lbl_Disco.Text = "0%";
             // 
-            // label6
+            // lbl_RAM
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(252, 36);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 20);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "0%";
+            this.lbl_RAM.AutoSize = true;
+            this.lbl_RAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_RAM.Location = new System.Drawing.Point(252, 36);
+            this.lbl_RAM.Name = "lbl_RAM";
+            this.lbl_RAM.Size = new System.Drawing.Size(32, 20);
+            this.lbl_RAM.TabIndex = 33;
+            this.lbl_RAM.Text = "0%";
             // 
-            // label5
+            // lbl_CPU
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(153, 36);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 20);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "0%";
+            this.lbl_CPU.AutoSize = true;
+            this.lbl_CPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_CPU.Location = new System.Drawing.Point(153, 36);
+            this.lbl_CPU.Name = "lbl_CPU";
+            this.lbl_CPU.Size = new System.Drawing.Size(32, 20);
+            this.lbl_CPU.TabIndex = 32;
+            this.lbl_CPU.Text = "0%";
             // 
             // CPU
             // 
@@ -264,9 +263,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_GPU;
+        private System.Windows.Forms.Label lbl_Disco;
+        private System.Windows.Forms.Label lbl_RAM;
+        private System.Windows.Forms.Label lbl_CPU;
     }
 }

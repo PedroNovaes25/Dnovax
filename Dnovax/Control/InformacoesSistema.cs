@@ -65,10 +65,17 @@ namespace Dnovax.Control
             foreach (ManagementBaseObject mj in teste.Get())
             {
                 int testando = Convert.ToInt32(mj[systax]);
-                int teste1 = testando / 1024 ;
+                int teste1 = testando / 1024 /1024;
+
+                UInt32 SizeinKB = Convert.ToUInt32(mj[systax]);
+                
+                //UInt32 SizeinMB = SizeinKB / 1024;
+                //UInt32 SizeinGB = SizeinMB / 1024;
+
+
 
                 //testando = testando / 24;
-                RamTamanho = Convert.ToString(mj[systax]);
+                RamTamanho = Convert.ToString(teste1);
             }
             return RamTamanho;
         }

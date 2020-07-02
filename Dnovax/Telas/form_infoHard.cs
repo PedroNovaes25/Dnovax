@@ -33,7 +33,7 @@ namespace Dnovax
 
             lbl_Bios.Text = infoSystem.GetBios("Win32_BIOS", "SMBIOSBIOSVersion");
 
-            lbl_Largura_Ram.Text = infoSystem.GetTamanhoRAM("Win32_PhysicalMemoryArray", "MaxCapacity");
+            lbl_Largura_Ram.Text = infoSystem.GetTamanhoRAM("Win32_PhysicalMemoryArray", "MaxCapacity") + "GB";
             //infoSystem.GetVersaoBios();
         }
     }

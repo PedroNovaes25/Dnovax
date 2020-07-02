@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dnovax.Control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,13 +16,8 @@ namespace Dnovax
         public form_AppHome()
         {
             InitializeComponent();
+            TesteProcessos();
         }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             form_perfil form = new form_perfil();
@@ -33,5 +29,17 @@ namespace Dnovax
             form_infoHard form = new form_infoHard();
             form.Show();
         }
+
+
+        private void TesteProcessos()
+        {
+            ProcessosDoSistema proc = new ProcessosDoSistema();
+
+            lbl_CPU.Text = Convert.ToString(proc.GetUsoCPU("Win32_Processor", "LoadPercentage") + " %");
+            lbl_RAM.Text = Convert.ToString(proc.GetUsoRAM("Win32_PhysicalMemoryArray", "MaxCapacity") + " %") ;
+
+            //lbl_RAM.Text = proc.GetUsoRAM("", "");
+        }
+    
     }
 }
