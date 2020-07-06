@@ -22,7 +22,6 @@ namespace Dnovax.Control
             SO = Environment.MachineName;
             return SO;
         }
-
         public string GetNomeCPU(string hwclass, string systax) 
         {
             ManagementObjectSearcher teste = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM " + hwclass);
@@ -64,26 +63,16 @@ namespace Dnovax.Control
             ManagementObjectSearcher teste = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM " + hwclass);
             foreach (ManagementBaseObject mj in teste.Get())
             {
-                int testando = Convert.ToInt32(mj[systax]);
-                int teste1 = testando / 1024 /1024;
+                int ramEmKB = Convert.ToInt32(mj[systax]);
+                int ramEmGB = ramEmKB / 1024 /1024;
 
-                UInt32 SizeinKB = Convert.ToUInt32(mj[systax]);
-                
+                //UInt32 SizeinKB = Convert.ToUInt32(mj[systax]);
                 //UInt32 SizeinMB = SizeinKB / 1024;
                 //UInt32 SizeinGB = SizeinMB / 1024;
-
-
-
-                //testando = testando / 24;
-                RamTamanho = Convert.ToString(teste1);
+               
+                RamTamanho = Convert.ToString(ramEmGB);
             }
             return RamTamanho;
         }
-
-        //public void GetVersaoBios() 
-        //{
-        //    var teste = Environment.Version;
-        //    Console.WriteLine(teste.ToString());
-        //}
     }
 }

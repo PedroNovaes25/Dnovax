@@ -23,7 +23,6 @@ namespace Dnovax.Control
             }
             return CPU;
         }
-
         public double GetUsoRAM(string hwclass, string systax)
         {
             ManagementObjectSearcher teste = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM " + hwclass);
@@ -55,6 +54,15 @@ namespace Dnovax.Control
             ramCounter = new PerformanceCounter("Memory", "Available KBytes");
 
             return ramCounter.NextValue();
+        }
+        public string GetDiscoEmUsoMB()
+        {
+            PerformanceCounter discoCounter;
+            discoCounter = new PerformanceCounter("PhysicalDisk", "% Disk Time", "_Total");
+            Int32 j = 0;
+            j = Convert.ToInt32(discoCounter.NextValue());
+
+            return Convert.ToString(j);
         }
 
     }
