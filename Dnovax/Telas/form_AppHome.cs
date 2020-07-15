@@ -18,7 +18,7 @@ namespace Dnovax
         {
             InitializeComponent();
             //TesteProcessos()
-            TesteTimer();
+            TesteProcessos();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -31,9 +31,7 @@ namespace Dnovax
             form_infoHard form = new form_infoHard();
             form.Show();
         }
-
-        private static System.Timers.Timer aTimer;
-        private async Task<> TesteProcessos()
+        private async Task TesteProcessos()
         {
 
             ProcessosDoSistema proc = new ProcessosDoSistema();

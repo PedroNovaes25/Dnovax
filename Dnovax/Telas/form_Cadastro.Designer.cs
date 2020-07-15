@@ -32,19 +32,19 @@
             this.btn_Entrar = new System.Windows.Forms.Button();
             this.btb_Cadastro = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_ConfirmarSenha = new System.Windows.Forms.TextBox();
             this.txt_Nome = new System.Windows.Forms.TextBox();
-            this.txt_ = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Senha = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_Email = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cb_sexo = new System.Windows.Forms.ComboBox();
+            this.mask_dataNascimento = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -53,17 +53,17 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.mask_dataNascimento);
+            this.panel1.Controls.Add(this.cb_sexo);
             this.panel1.Controls.Add(this.btn_Entrar);
             this.panel1.Controls.Add(this.btb_Cadastro);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.txt_ConfirmarSenha);
             this.panel1.Controls.Add(this.txt_Nome);
-            this.panel1.Controls.Add(this.txt_);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_Senha);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txt_Email);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -87,7 +87,7 @@
             this.btn_Entrar.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
             this.btn_Entrar.Name = "btn_Entrar";
             this.btn_Entrar.Size = new System.Drawing.Size(119, 34);
-            this.btn_Entrar.TabIndex = 28;
+            this.btn_Entrar.TabIndex = 8;
             this.btn_Entrar.Text = "Logar";
             this.btn_Entrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Entrar.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@
             this.btb_Cadastro.Location = new System.Drawing.Point(191, 430);
             this.btb_Cadastro.Name = "btb_Cadastro";
             this.btb_Cadastro.Size = new System.Drawing.Size(139, 34);
-            this.btb_Cadastro.TabIndex = 27;
+            this.btb_Cadastro.TabIndex = 7;
             this.btb_Cadastro.Text = "Cadastrar";
             this.btb_Cadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btb_Cadastro.UseVisualStyleBackColor = false;
@@ -121,16 +121,16 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "Confirmar Senha:";
             // 
-            // textBox6
+            // txt_ConfirmarSenha
             // 
-            this.textBox6.BackColor = System.Drawing.Color.LightGray;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.ForeColor = System.Drawing.Color.Transparent;
-            this.textBox6.Location = new System.Drawing.Point(74, 378);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(172, 25);
-            this.textBox6.TabIndex = 25;
+            this.txt_ConfirmarSenha.BackColor = System.Drawing.Color.LightGray;
+            this.txt_ConfirmarSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_ConfirmarSenha.ForeColor = System.Drawing.Color.Transparent;
+            this.txt_ConfirmarSenha.Location = new System.Drawing.Point(74, 378);
+            this.txt_ConfirmarSenha.Multiline = true;
+            this.txt_ConfirmarSenha.Name = "txt_ConfirmarSenha";
+            this.txt_ConfirmarSenha.Size = new System.Drawing.Size(172, 25);
+            this.txt_ConfirmarSenha.TabIndex = 6;
             // 
             // txt_Nome
             // 
@@ -141,40 +141,18 @@
             this.txt_Nome.Multiline = true;
             this.txt_Nome.Name = "txt_Nome";
             this.txt_Nome.Size = new System.Drawing.Size(172, 25);
-            this.txt_Nome.TabIndex = 23;
+            this.txt_Nome.TabIndex = 1;
             // 
-            // txt_
+            // txt_Senha
             // 
-            this.txt_.BackColor = System.Drawing.Color.LightGray;
-            this.txt_.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_.ForeColor = System.Drawing.Color.Transparent;
-            this.txt_.Location = new System.Drawing.Point(74, 147);
-            this.txt_.Multiline = true;
-            this.txt_.Name = "txt_";
-            this.txt_.Size = new System.Drawing.Size(172, 25);
-            this.txt_.TabIndex = 22;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.LightGray;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.ForeColor = System.Drawing.Color.Transparent;
-            this.textBox2.Location = new System.Drawing.Point(74, 322);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 25);
-            this.textBox2.TabIndex = 21;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.LightGray;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.textBox1.Location = new System.Drawing.Point(74, 206);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 25);
-            this.textBox1.TabIndex = 20;
+            this.txt_Senha.BackColor = System.Drawing.Color.LightGray;
+            this.txt_Senha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Senha.ForeColor = System.Drawing.Color.Transparent;
+            this.txt_Senha.Location = new System.Drawing.Point(74, 322);
+            this.txt_Senha.Multiline = true;
+            this.txt_Senha.Name = "txt_Senha";
+            this.txt_Senha.Size = new System.Drawing.Size(172, 25);
+            this.txt_Senha.TabIndex = 5;
             // 
             // label5
             // 
@@ -196,16 +174,16 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "E-mail:";
             // 
-            // textBox3
+            // txt_Email
             // 
-            this.textBox3.BackColor = System.Drawing.Color.LightGray;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.ForeColor = System.Drawing.Color.Transparent;
-            this.textBox3.Location = new System.Drawing.Point(74, 266);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(172, 25);
-            this.textBox3.TabIndex = 16;
+            this.txt_Email.BackColor = System.Drawing.Color.LightGray;
+            this.txt_Email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Email.ForeColor = System.Drawing.Color.Transparent;
+            this.txt_Email.Location = new System.Drawing.Point(74, 266);
+            this.txt_Email.Multiline = true;
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(172, 25);
+            this.txt_Email.TabIndex = 4;
             // 
             // label3
             // 
@@ -255,6 +233,28 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // cb_sexo
+            // 
+            this.cb_sexo.BackColor = System.Drawing.Color.DarkGray;
+            this.cb_sexo.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.cb_sexo.FormattingEnabled = true;
+            this.cb_sexo.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.cb_sexo.Location = new System.Drawing.Point(74, 147);
+            this.cb_sexo.Name = "cb_sexo";
+            this.cb_sexo.Size = new System.Drawing.Size(121, 21);
+            this.cb_sexo.TabIndex = 2;
+            // 
+            // mask_dataNascimento
+            // 
+            this.mask_dataNascimento.BackColor = System.Drawing.Color.LightGray;
+            this.mask_dataNascimento.Location = new System.Drawing.Point(74, 206);
+            this.mask_dataNascimento.Mask = "00/00/0000";
+            this.mask_dataNascimento.Name = "mask_dataNascimento";
+            this.mask_dataNascimento.Size = new System.Drawing.Size(172, 20);
+            this.mask_dataNascimento.TabIndex = 3;
+            // 
             // form_Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,17 +280,17 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_Nome;
-        private System.Windows.Forms.TextBox txt_;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_Senha;
+        private System.Windows.Forms.TextBox txt_ConfirmarSenha;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btb_Cadastro;
         private System.Windows.Forms.Button btn_Entrar;
+        private System.Windows.Forms.ComboBox cb_sexo;
+        private System.Windows.Forms.MaskedTextBox mask_dataNascimento;
     }
 }
