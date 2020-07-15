@@ -30,24 +30,23 @@ namespace Dnovax
 
         private void btn_Entrar_Click(object sender, EventArgs e)
         {
-            //Consultas app = new Consultas();
+            Consultas app = new Consultas();
 
-            //string email = txt_email.Text;
-            //string senha = txt_senha.Text;
+            string email = txt_email.Text;
+            string senha = txt_senha.Text;
 
-            //if (app.Login(email, senha) == true)
-            //{
-            //    MessageBox.Show("Login realizado com sucesso", "Login");
-            //    form_AppHome form = new form_AppHome();
-            //    form.Show();
-            //}
-            //else 
-            //{
-            //    MessageBox.Show("Não foi possível realizar o Login", "Erro Login");
-            //}
+            if (app.Login(email, senha) == true)
+            {
+                MessageBox.Show("Login realizado com sucesso", "Login");
+                form_AppHome form = new form_AppHome();
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Não foi possível realizar o Login", "Erro Login");
+            }
 
-            form_AppHome form = new form_AppHome();
-            form.Show();
+            
         }
 
         private void lbl_Link_cad_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
